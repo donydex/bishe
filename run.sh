@@ -15,4 +15,7 @@ echo "sleep start"
 sleep $2
 
 echo "zipkin_output start"
-python zipkin_output.py $run_time $file_name $ecpho
+python zipkin_output.py $run_time $file_name $ecpho &
+
+echo "calculate start"
+python calculate_grade_csv.py $file_name $api_name
