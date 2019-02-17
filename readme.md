@@ -8,6 +8,7 @@ get_requests.py --------------> 执行请求操作
 zipkin_output.py -------------> 获取response time
 run.sh -----------------------> 执行脚本
 readme.md --------------------> 介绍
+run_traverse.sh --------------> 遍历gateway脚本
 ```
 
 ##### config.ini
@@ -50,3 +51,12 @@ readme.md --------------------> 介绍
     * e.g.: bash run.sh test1 120 gateway01 1
 * 输出结果
     * 依次执行`docker_output.py`,`docker_output.py`在`执行时间`后执行`zipkin_output.py`
+    
+#### run_traverse.sh
+
+* 执行命令
+   * bash run_traverse.sh file_name run_time 配置数(gateway数量) 请求次数
+   * bash run_traverse.sh test3 30 52 1
+* 输出结果
+   * 产生每个gateway对应的分数
+   
