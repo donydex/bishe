@@ -18,10 +18,17 @@ class calculate_grade_csv(object):
         memory_grade = numpy.mean(data["mem"])
         return cpu_grade + memory_grade
 
+#    def calculate_json_grade(self):
+#        data = pandas.read_csv(self.json_file)
+#        data = data[data.api == self.api_name]
+#        json_grade = numpy.mean(data["duration"])
+#        return json_grade
+        
     def calculate_json_grade(self):
-        data = pandas.read_csv(self.json_file)
-        data = data[data.api == self.api_name]
-        json_grade = numpy.mean(data["duration"])
+        print("json_file {0}".format(self.json_file))
+        data = pandas.read_csv(self.json_file) 
+        json_grade = data["duration"][0]
+        print("json grade {0}\n".format(json_grade))
         return json_grade
 
     def create_csv(self):
