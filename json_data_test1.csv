@@ -1,5 +1,6 @@
 api,duration
-/gateway/gateway10,953148
-/service1/memorySmallest,206472
-/service1/memoryBiggest,699896
-/service1/cpuSmallest,6460
+/gateway/gateway52,5441719
+/service4/memorySmallest,72643
+/service3/memoryBiggest,594679
+/service2/cpuSmallest,5452
+/service1/cpuBiggest,2819400
